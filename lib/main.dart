@@ -12,9 +12,11 @@ class MyApp extends StatelessWidget {
         // appBar: AppBar(
         //   title: Text('Welcome to Flutter'),
         // ),
-        body: WebView(
-          initialUrl: "https://sis.fantasygeek11.com/dashboard",
-          javascriptMode: JavascriptMode.unrestricted,
+        body: SafeArea(
+          child: WebView(
+            initialUrl: "https://sis.fantasygeek11.com/dashboard",
+            javascriptMode: JavascriptMode.unrestricted,
+          ),
         ),
       ),
     );
