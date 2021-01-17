@@ -9,11 +9,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Welcome to Flutter',
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Welcome to Flutter'),
-        ),
-        body: Center(
-          child: Text('Hello World'),
+        // appBar: AppBar(
+        //   title: Text('Welcome to Flutter'),
+        // ),
+        body: WebView(
+          initialUrl: "https://sis.fantasygeek11.com/dashboard",
+          javascriptMode: JavascriptMode.unrestricted,
         ),
       ),
     );
