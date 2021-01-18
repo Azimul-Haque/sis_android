@@ -41,7 +41,6 @@ class _HomePageState extends State<HomePage> {
         child: WebView(
           initialUrl: "https://sis.fantasygeek11.com/dashboard",
           javascriptMode: JavascriptMode.unrestricted,
-          onWebResourceError: _showSnackbar("No Connection!"),
         ),
       ),
     );
